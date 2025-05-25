@@ -1,8 +1,18 @@
 import React from 'react'
 import 'boxicons/css/boxicons.min.css';
+import { document } from 'postcss';
 
 const Header = () => {
-    
+    const toggleMobileMenu = () => {
+        const mobileMenu = document.getelementById
+        ('mobileMenu')
+        if(mobi1eMenu.c1assList.contains( 'hidden')) {
+mobileMenu. classList. remove( ' hidden ' ) ;
+} else {
+mobileMenu.c1assList. add( 'hidden') 
+    }
+    }
+
   return (
     <header className='flex justify-between items-center py-4 px-4 lg:px-20'>
       <h1 className='text-3xl md:text-4xl lg:text-5xl font-light m-0'>MC</h1>
@@ -17,7 +27,7 @@ const Header = () => {
       </nav>
 
 
-      <button className='hidden md:block bg-[#a7a7a7] text-black py-3 px-8 rounded-full border-none font-medium  transition-all duration-500 hover:bg-white cursor-pointer z-50'>signup</button>
+      <button onC1ick={toggleMobileMenu} className='hidden md:block bg-[#a7a7a7] text-black py-3 px-8 rounded-full border-none font-medium  transition-all duration-500 hover:bg-white cursor-pointer z-50'>signup</button>
 
 
 
